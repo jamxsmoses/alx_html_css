@@ -1,0 +1,16 @@
+@media (max-width: 1040px) {
+    header nav {
+        width: 90%;
+    }
+
+    .hero-inner {
+        width: 95%;
+        justify-content: center;
+        padding-top: 350px;
+        gap: 18px;
+    }
+
+    .hero-inner h1 {
+        line-height: 40px;
+    }
+}

@@ -1,5 +1,32 @@
 /* CSS RESET */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@font-face {
+    font-family: 'holberton_school-icon';
+    src:  url('./fonts/holberton_school-icon.eot?sq4eq4');
+    src:  url('./fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+      url('./fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+      url('./fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+      url('./fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'holberton_school-icon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
 * {
     margin: 0;
     padding: 0;
@@ -136,6 +163,81 @@ header nav ul a {
     margin-top: 30px;
 }
 
+/* What we do section */
+.what-we-do {
+    width: 100%;
+    padding: 120px 0px;
+}
+
+.what-we-do .inner-wwd {
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.what-we-do .inner-wwd .things {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.what-we-do .inner-wwd h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.what-we-do .inner-wwd .p-cont {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.what-we-do .inner-wwd .things {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.holberton_school-icon-ic_sound:before {
+    content: "\e90e";
+    font-size: 100px;
+    color: #FF6565;
+}
+
+.holberton_school-icon-ic_video:before {
+    content: "\e910";
+    font-size: 100px;
+    color: #FF6565;
+  }
+
+.holberton_school-icon-ic_hearing:before {
+    content: "\e909";
+    font-size: 100px;
+    color: #FF6565;
+}
+
+.holberton_school-icon-ic_music:before {
+    content: "\e90d";
+    font-size: 100px;
+    color: #FF6565;
+}
+
+.what-we-do .inner-wwd .things .media-cont div {
+    margin-bottom: 28px;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.what-we-do .inner-wwd .things .media-cont h3 {
+    margin-bottom: 28px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
 @media (max-width: 1040px) {
     header nav {
         width: 80%;
@@ -146,6 +248,27 @@ header nav ul a {
         justify-content: center;
         padding-top: 350px;
         gap: 18px;
+    }
+
+    /* What we do section */
+    .what-we-do .inner-wwd {
+        max-width: 95%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .what-we-do .inner-wwd .things {
+        display: grid;
+        width: 60%;
+        margin: auto;
+        column-gap: 100px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .what-we-do .inner-wwd .p-cont {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 100px;
     }
 }
 
@@ -235,5 +358,23 @@ header nav ul a {
     .hero-inner h1 {
         line-height: 40px;
         margin-bottom: 10px;
+    }
+
+    /* What we do section */
+    .what-we-do .inner-wwd .things {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .what-we-do .inner-wwd .p-cont {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+    
+    .what-we-do .inner-wwd .things {
+        grid-template-columns: 1fr;
     }
 }

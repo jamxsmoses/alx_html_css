@@ -1,0 +1,741 @@
+/* CSS RESET */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@font-face {
+    font-family: 'holberton_school-icon';
+    src:  url('./fonts/holberton_school-icon.eot?sq4eq4');
+    src:  url('./fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+      url('./fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+      url('./fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+      url('./fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-back {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+    }
+  }
+  @keyframes rotate-back {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+    }
+}
+  
+  [class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'holberton_school-icon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, ::placeholder {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #071629;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Source Sans 3", sans-serif;
+    color: #071629;
+}
+
+a:hover {
+    color: #FF6565;
+    transition-duration: .2s;
+}
+
+a:active {
+    transition-duration: .2s;
+    color: #FF6565;
+}
+
+button {
+    background-color: #FF6565;
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.9;
+    transition-duration: .2s;
+    animation: rotate-center .4s ease-in-out;
+}
+
+button:not(:hover) {
+    opacity: 0.9;
+    transition-duration: .2s;
+    animation: rotate-back .4s ease-in-out;
+}
+
+button:active {
+    transition-duration: .2s;
+    opacity: 0.9;
+}
+
+/* Header*/
+header {
+    width: 100%;
+    position: absolute;
+    top: 28px;
+    left: 0;
+}
+
+header nav {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav img {
+    width: 161px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+header nav ul a {
+    color: #ffffff;
+    font-size: 12px;
+    transition-duration: .32;
+    font-weight: bold;
+}
+
+.menu-icon {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/headphones_hero_1.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 160px;
+    flex-direction: column;
+    height: 100%;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    gap: 40px;
+}
+
+.hero-inner div h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.hero-inner div p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.hero-inner button {
+    padding: 18px 30px;
+    font-weight: 700;
+    border-radius: 26px;
+    cursor: pointer;
+}
+
+.hero-inner p {
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+/* What we do section */
+.what-we-do {
+    width: 100%;
+    padding: 150px 0px;
+}
+
+.what-we-do .inner-wwd {
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.what-we-do .inner-wwd .things {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.what-we-do .inner-wwd h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.what-we-do .inner-wwd .p-cont {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.what-we-do .inner-wwd .things {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.holberton_school-icon-ic_sound:before {
+    content: "\e90e";
+    font-size: 120px;
+    color: #FF6565;
+}
+
+.holberton_school-icon-ic_video:before {
+    content: "\e910";
+    font-size: 120px;
+    color: #FF6565;
+  }
+
+.holberton_school-icon-ic_hearing:before {
+    content: "\e909";
+    font-size: 120px;
+    color: #FF6565;
+}
+
+.holberton_school-icon-ic_music:before {
+    content: "\e90d";
+    font-size: 120px;
+    color: #FF6565;
+}
+
+.what-we-do .inner-wwd .things .media-cont div {
+    margin-bottom: 28px;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.what-we-do .inner-wwd .things .media-cont h3 {
+    margin-bottom: 28px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* Our Results Section */
+.our-results {
+    width: 100%;
+    padding: 150px 0px;
+    background-image: url(./images/headphones_hero_2.jpg);
+    background-position: center 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.our-results .inner-results {
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.h1Cont{
+    width: 100%;
+    text-align: center;
+}
+
+.our-results .inner-results h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    color: #ffffff;
+}
+
+.our-results .inner-results .p-cont {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.our-results .inner-results .p-cont p {
+    color: #ffffff;
+}
+
+.our-results .inner-results .outer-shape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.our-results .inner-results .outer-shape .shapes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.our-results .inner-results .outer-shape .shapes .polygonCont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.our-results .inner-results .outer-shape .shapes .shapes-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 190px;
+    height: 190px;
+}
+
+
+.our-results .inner-results .outer-shape .shapes .polygon {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.our-results .inner-results .outer-shape .shapes .polygon-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.mainPolygon {
+    width: 100%;
+    height: 0px;
+    border-bottom: 95px solid #ff6565;
+    border-right: 95px solid transparent;
+    border-left: 95px solid transparent;
+    position: relative;
+}
+
+.mainPolygon::before {
+    position: absolute;
+    content: '';
+    height: 0px;
+    width: 95px;
+    border-top: 95px solid #ff6565;
+    border-right: 48px solid transparent;
+    border-left: 48px solid transparent;
+    top: 95px;
+    left: -95px;
+}
+
+.our-results .inner-results .outer-shape .shapes .shapes-cont h1 {
+    margin: 0;
+    z-index: 1;
+}
+
+.our-results .inner-results .outer-shape .shapes .shapes-cont p {
+    z-index: 1;
+    color: #ffffff;
+}
+
+/* Contact Us Section */
+.contactUs {
+    width: 100%;
+    padding: 150px 0px;
+}
+
+.innerContact {
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.contactUs .innerContact h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+form {
+    width: 335px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    justify-content: center;
+    align-items: center;
+}
+
+::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+    color: #071629
+}
+
+form input {
+    padding: 10px 0px;
+    border: none;
+    border-bottom: 1px solid #0716294f;
+    width: 100%;
+}
+
+form button {
+    padding: 18px 30px;
+    font-weight: 700;
+    border-radius: 26px;
+    cursor: pointer;
+    width: 162px;
+    font-size: 12px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 90px 0px 50px 0px;
+    background-color: #071629;
+    text-align: center;
+}
+
+.innerFooter {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 76px;
+}
+
+.innerFooter img {
+    width: 160px;
+}
+
+footer .innerFooter div {
+    display: flex;
+    gap: 20px;
+}
+
+.holberton_school-icon-ic_facebook:before {
+    content: "\e908";
+    color: #ffffff;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.holberton_school-icon-ic_twitter:before {
+    content: "\e90f";
+    color: #ffffff;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.holberton_school-icon-ic_instagram:before {
+    content: "\e90a";
+    color: #ffffff;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #ffffff85;
+}
+
+@media (max-width: 1040px) {
+    header nav {
+        width: 80%;
+    }
+
+    .hero-inner {
+        max-width: 80%;
+        justify-content: center;
+        padding-top: 350px;
+        gap: 18px;
+    }
+
+    /* What we do section */
+    .what-we-do .inner-wwd {
+        max-width: 95%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .what-we-do .inner-wwd .things {
+        display: grid;
+        width: 60%;
+        margin: auto;
+        column-gap: 100px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .what-we-do .inner-wwd .p-cont {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+
+    /* Our Results Section */
+    .our-results .inner-results {
+        max-width: 95%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .our-results .inner-results .outer-shape {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .our-results .inner-results .shapes {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .our-results .inner-results .p-cont {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+
+    /* Contact Us Section */
+    .innerContact {
+        max-width: 80%;
+    }
+
+    /* Footer */
+    .innerFooter {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    header nav {
+        width: 100%;
+        padding: 0px 30px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+        position: relative;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 20px;
+        overflow: hidden;
+        align-items: center;
+        transition-duration: .2s;
+        height: 0px;
+    }
+
+    header nav ul a {
+        font-size: 14px;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 12px;
+        left: 30px;
+        cursor: pointer;
+    }
+
+    .menu-icon span {
+        display: block;
+        height: 2px;
+        border-radius: 10px;
+        background: #ffffff;
+        margin-bottom: 5px;
+        transition: all 0.3s;
+    }
+
+    .menu-icon span:nth-child(1), .menu-icon span:nth-child(3) {
+        width: 20px;
+    }
+
+    .menu-icon span:nth-child(2) {
+        width: 12px;
+    }
+
+    #check:checked ~ ul {
+        height: 100px;
+        transition-duration: .2s;
+    }  
+    
+    #check:checked + .menu-icon span:nth-child(1) {
+        transform: rotate(45deg) translate(1px, 4px);
+    }
+        
+    #check:checked + .menu-icon span:nth-child(3) {
+        transform: rotate(-45deg) translate(1px, -4px);
+    }
+        
+    #check:checked + .menu-icon span:nth-child(2) {
+        display: none;
+    }
+
+    #check:checked + .menu-icon {
+        padding-top: 2px;
+    }
+        
+
+    .hero {
+        background-position: 34% top;
+    }
+
+    .hero-inner {
+        max-width: 90%;
+        padding: 0px 30px;
+        justify-content: end;
+        padding-bottom: 110px;
+        gap: 18px;
+    }
+
+    .hero-inner h1 {
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+
+    /* What we do section */
+    .what-we-do .inner-wwd .things {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .what-we-do .inner-wwd .p-cont {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+    
+    .what-we-do .inner-wwd .things {
+        grid-template-columns: 1fr;
+    }
+
+    /* Our Results Section */
+    .h1Cont {
+        width: 60%;
+        margin: auto;
+    }
+
+    .our-results .inner-results .outer-shape {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .our-results .inner-results .shapes {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        gap: 100px;
+        justify-content: space-between;
+    }
+    
+    .our-results .inner-results .shapes .shapes-cont {
+        margin-left: -8px;
+        transform: translateX(0%);
+    }
+    
+    .our-results .inner-results .p-cont {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+
+    /* Footer */
+    .innerFooter {
+        flex-direction: column;
+        gap: 60px;
+        width: 90%;
+        margin-bottom: 60px;
+    }
+}
